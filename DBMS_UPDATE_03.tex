@@ -1,0 +1,144 @@
+\documentclass[10pt,a4paper,twoside]{article}
+\usepackage[dutch]{babel}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float,flafter}	
+\usepackage{hyperref}
+\usepackage{inputenc}
+\usepackage{graphicx}
+\setlength\paperwidth{20.999cm}\setlength\paperheight{29.699cm}\setlength\voffset{-1in}\setlength\hoffset{-1in}\setlength\topmargin{1cm}\setlength\headheight{12pt}\setlength\headsep{0cm}\setlength\footskip{1.131cm}\setlength\textheight{25cm}\setlength\oddsidemargin{2.499cm}\setlength\textwidth{15.999cm}
+
+\begin{document}
+\begin{center}
+\hrule
+
+\vspace{.4cm}
+{\bf {\Large TERM PAPER - UPDATES }}\\
+\vspace{0.3cm}
+{\bf {\huge DBMS FOR BREAST CANCER 
+
+
+PATIENTS}}
+\vspace{0.3cm}
+\end{center}
+{\bf Name:}  Shivam Yadav\\
+{\bf Roll no:}  19111054 \\
+{\bf Branch: }  Biomedical Engineering \hspace{\fill}  21 January, 2022 \\
+\hrule
+
+\vspace{.5cm}
+
+\section{ABSTRACT}
+
+Breast cancer patients' data was analysed utilising a new upgraded computerised database based on breast cancer risk variables such as age, race, breastfeeding, hormone replacement therapy, family history, and obesity.system of management MySQL (My Structural Query Language) is chosen as the database administration application.a method for storing patient data collected from Malaysian hospitals Incorporated into the programme is an automatic calculating tool.
+This technology is designed to aid with data analysis. The findings are automatically plotted, and a user-friendly graphical user interface is provided.is being created to govern the MySQL database. Breast cancer is most common among women, according to case studies.Malay women are the most common, followed by Chinese and Indian women.Breast cancer is most common between the ages of 50 and 59.
+The findings imply that the risk of breast cancer is higher in older women and lower in women who breastfeed. Weight status may have a different impact on breast cancer risk. More research is needed to corroborate these findings.
+
+\section{ INTRODUCTION}
+
+Many hospitals throughout the world have established a computerised database management (CDM) system to provide for proper management of medical records for various types of cancer patients (Ann et al. 2003). Due to the expensive installation and implementation costs, as well as a shortage of experienced technicians for maintenance, only a few hospitals in Malaysia have adopted a CDM system.Medical data is required in any health-care institution in order to avoid medical errors and erroneous decisions. To meet the growing demand for medical information accessibility, CDM-based management solutions have been created.
+\vspace{0.3cm}
+
+The goal of this study is to develop a CDM system that is appropriate for breast cancer patients in Malaysian hospitals, though the product can be modified to other patients or countries. The first section of the paper explains how to set up an analytical database management system. The system includes features including storing and retrieving patient data, inputting new patient data, updating or removing data, and scheduling appointments.For this, an automated computation tool is being developed in the analytic database management system. Age, race, breastfeeding, hormone replacement therapy, family history, and obesity are all investigated as breast cancer risk factors.
+
+\vspace{0.3cm}
+Microsoft Access and MySQL are the tools that can be
+used to implement the relational database management
+system. Relational database is a collection of data items
+where the data are organized into the table form, and
+data can be accessed in many different ways without
+reorganizing the database tables (Allen 2006). This
+database management system has the capability to gather,
+store and transmit the medical record information from
+different sites of hospital to a centralized database system
+Microsoft Access is a well-known data management programme that allows you to store information or data in tables that it manages from your local hard drive (Paul 2011).
+Microsoft Access can create a 'back-end' database that holds the needed data while still providing a user-friendly 'front-end' interface.Microsoft Access is a well-known data management tool that lets you store data or information in tables that it manages from your local hard disc (Paul 2011).
+Microsoft Access can establish a 'back-end' database that stores the necessary information while also providing a user-friendly 'front-end' interface.
+
+\section{ISSUES IN EXISTING PRACTICE IN MALAYSIA}
+
+There are a lot of patients seeking diagnosis and medical
+treatment of breast cancer in hospitals every day. As an
+example, at the Melaka General Hospital (MGH), the
+current practice is to handle the huge amount of data
+through the hardcopy format.The patient registration process begins with a hardcopy format. If visible symptoms are identified, the physician will undertake a breast examination and recommend a relevant breast screening test such as a mammography, ultrasound, or breast biopsy. A hardcopy report containing a description of the patient's condition and the type of screening test is submitted to the hospital's radiology department.. Following the test, the photos and results, which are also available in hardcopy format, will be sent to the physician, who will then decide on the next course of action. The documentation area houses all of the hardcopies.
+\vspace{0.3cm}
+Apart from security considerations, physical transfer  reports is time consuming. When a medical report is required quickly, this might be a significant issue. In Furthermore, due to the high amount of data recorded,intricate layout in the documentation room of records that can obstruct retrieval, updating, or modification It's difficult and time-consuming to keep track of the records.Furthermore, when medical reports are lost or damaged, it is almost impossible to retrieve the lost information.
+Unlike a computerised system which can perform routine partial checks, human errors incurred in filling the medical forms and reports are more difficult to be detected by the system, since the report must be seen by another person before the abnormally can be discovered.Furthermore, when medical reports are lost or damaged, it is practically hard to retrieve the lost information.
+Unlike a computerised system which can run routine partial checks, human errors made in filling the medical forms and reports are more difficult to be caught by the system, since the report must be seen by another person before the abnormally can be discovered
+
+\section{ AN ANAYLTIC DATABASE MANAGEMENT SYSTEM FOR BREAST
+CANCER PATIENTS - THE OBJECTIVE}
+
+An analytic database management system is presented to solve the constraints of the existing system, allowing data to be conveniently collected, saved, updated, and retrieved. The recommended solutions to address the mentioned challenges are detailed in Table 1.
+
+\section{ Details of design}
+
+The system is specifically built for easily and comfortably processing and organising medical information such as personal details and diagnosis reports used in breast cancer departments, as well as essential data analysis. Large databases are used to collect and preserve medical records.A graphical user interface (GUI) is a user-friendly 'front-end' interface that controls the 'back-end' database and acts as a communication link between the user and the database.
+Table 2 lists the elements that have been incorporated into the database management system architecture.
+
+
+\begin{figure}
+  \includegraphics[width=1.1\linewidth]{1.png} \includegraphics[width=1.1\linewidth]{2.png}
+  \includegraphics[width=1.1\linewidth]{3.png}
+  
+  
+  
+\end{figure}
+
+
+
+\section{Data and database}
+
+The type of data kept and the manner of data gathering have a big impact on database design. Patient information and diagnosis reports were used in this endeavour.are must be kept in the manner stated in Table 3.MGH provided a total of 1057 patient data for breast cancer (mostly in hardcopy format) for this project. A patient who undergoes an MRI examination has the data saved in the digital image and communications in medicine (DICOM) format, which is a standard for managing, storing, and transferring information in medical imaging. DICOM files can be shared between two entities, for example, to get images or obtain patient information.
+\vspace{0.3cm}
+Because the forms of the data differ, a standardized data format is required. A text file is created for data that is kept in hardcopy format in order to transform it.converting the patient's information to a softcopy format On the contrary,The contents of the DICOM file must be retrieved.and saved in a text file alongside the relevant MRI diagnosis report that has been converted to a softcopy version The DICOM files must be read in order to be read.As seen in the example, the MATLAB programming language is employed.1st Figure
+
+\vspace{0.3cm}
+
+The database is a method of storing and managing information that is methodical and well-organized.
+Because of its low cost and appropriate security, MySQL was chosen as the essential system software to implement the system database. MySQL provides an authorised user with a fast, flexible, secure, and consistent means of retrieving, updating, and entering data into the database.
+Using a structured query language (SQL) and statements that are part language, part mathematics, the developer can construct and manipulate the data in any way they choose.
+The output of the LOAD DATA command is shown in Figure 3. The text file's data has been successfully transmitted.
+
+
+
+\section{Concept of GUI}
+
+The graphical user interface (GUI) serves as a communication link between the user and the database, allowing users to interact with the database with ease. For example, by simply clicking on specific features in the GUI such as a button or a checkbox, the user can easily update records, insert new records, or delete existing records in the MySQL database. There is no requirement to learn programming. Figure 4 depicts the notion of a graphical user interface.
+\vspace{0.3cm}
+
+On the left, there is a list of tools that you can use.
+To design the GUI, drag the desired tools from the toolbox to the form side, such as a button, text box, group box, and list view. Figure 5 shows a list of the tools that can be found in the toolbox.
+The Window Application Form 1 has a properties box in the lower right corner. It allows you to change the size, text, font, colour, and visibility of the tool. Figure 6 depicts the properties box that occurs after dragging a button onto the form side.
+
+
+\section{Main menu page}
+The main page has a collection of connections to several pages, such as the patient registration page, personal information, diagnosis report, statistical analysis, and appointments.
+The level of access to the pages is determined by the user type. For example, a nurse or staff member can view the information, but only the physician can add or change the patient report.
+
+\section{ Design of assessibility}
+
+By selecting the appropriate button, the user can navigate to the desired page. The main menu page is made up of buttons that are grouped and framed within a group box. The visibility of the group box for the main menu feature is initially set to "false" in the properties box. The visibility is adjusted to "true" once access is granted.
+
+\section{Patient registration}
+
+Only the nurse or staff has access to this page, which is used to enter new patient records into the database. When vital data is not inserted, a message is sent to decrease human mistake and prevent data loss. There are various checkboxes that allow the user to choose the patient's background and breast cancer symptoms. If the button is activated, it sends all of the entered data to the MySQL database. To create the new patient registration page, all input controls are enclosed with a group box.
+
+\section{Codes}
+
+The visibility of the group box in the properties box is initially set to false. When the user clicks the button to access this page, the group box visibility is set to true in the codes, whereas the group box visibility for the main menu page is set to false. The patient's data is entered into the appropriate input text boxes and checkboxes. When the insert button is pressed, a series of actions are initiated. The textboxes for entering some vital patient data are first checked. If any of the text boxes are left blank, a message box appears as a reminder to fill in the blanks. While waiting for the delayed response, a delay system is applied.
+
+
+
+\section{Personal details and diagnosis report}
+
+A further enhancement for the security of analytic database
+management system is accomplished through recording
+date and time that the patient data are updated or edited in
+MySQL database and then displayed on the GUI. Figure 8
+shows the patient personal details and diagnosis code flow
+
+
+
+\end{document}
